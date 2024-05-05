@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="icon" type="image/jpeg" href="icon.jpg">
+
+  <!-- Google Fonts - Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+
+  <style>
+    /* Add some custom styles if needed */
+    body {
+      background-image: url('bg.jpg'); /* Background image */
+      background-size: cover; /* Cover the entire viewport */
+      background-position: center; /* Center the background image */
+      background-repeat: no-repeat; /* Do not repeat the background image */
+      font-family: 'Roboto', sans-serif; /* Apply Roboto font */
+      margin: 0; /* Remove default margin */
+      padding: 0; /* Remove default padding */
+      height: 100vh; /* Set the height to 100% of the viewport height */
+    }
+    
+    .login-container {
+      margin-top: 50px;
+      max-width: 400px; /* Adjusted max-width */
+    }
+    .login-form {
+      background-color: rgba(76, 29, 95, 0.8); /* Dark-themed container color with opacity */
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    .login-form h2 {
+      color: #fff; /* White text color */
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    .login-form label {
+      color: #fff; /* White text color */
+    }
+    .btn-primary {
+      background-color: rgba(76, 29, 95, 1); /* Darker shade of the background color */
+      border-color: rgba(76, 29, 95, 1); /* Darker shade of the background color */
+    }
+    .btn-primary:hover {
+      background-color: rgba(76, 29, 95, 0.9); /* Darker shade of the background color on hover */
+      border-color: rgba(76, 29, 95, 0.9); /* Darker shade of the background color on hover */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6 login-container">
+        <form class="login-form" id="loginForm">
+          <h2>Login</h2>
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" class="form-control" id="username" placeholder="Enter your username" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+          </div>
+          <button type="button" class="btn btn-primary btn-block" onclick="login()">Login</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS (optional) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    function login() {
+      window.location.href = "dashboard.html";
+    }
+  </script>
+</body>
+</html>
